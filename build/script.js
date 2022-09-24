@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var imc_1 = require("./imc");
+var prompt_sync_1 = require("prompt-sync");
+var prompt = (0, prompt_sync_1.default)();
+console.log('SEJA BEM VINDE AO CALCULO DO ÍNDICE DE MASSA CORPORAL! <br>');
+var peso = Number(prompt('Digite seu peso: '));
+var altura = Number(prompt('Digite sua altura: '));
+var calculoImc = (0, imc_1.imc)(peso, altura);
+console.log("O seu \u00CDndice de Massa Corporal (IMC) \u00E9 igual a: ".concat(calculoImc));
